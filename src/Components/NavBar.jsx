@@ -43,6 +43,9 @@ const NavBar = () => {
             ) : 
             (Storage.get('authUser') && Storage.get('authUser').rol == 'user' ) ? (
               <>
+              <NavLink href="/mapas" className='text-dark h3 me-md-5'>
+                Mapa
+              </NavLink>
               <NavLink href="/mis-reservaciones" className='text-dark h3 me-md-5'>
                 Mis reservaciones
               </NavLink>

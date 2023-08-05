@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './Components/NavBar'
 import Login from './Views/Public/Login'
@@ -21,6 +22,7 @@ import Respuestas from './Views/Admin/Encuestas/Respuestas'
 import Preguntas from './Views/Admin/Encuestas/Preguntas'
 import Aplicar from './Views/User/Encuestas/Aplicar'
 import Survey from './Views/User/Encuestas/Survey'
+import IndexMaps from './Views/User/Mapas/index'
 import './App.css'
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
           <Route path="/editar-reserva/:id" element={<EditarReserva />} />
           <Route path="/survey" element={<Survey />} />
           <Route path="/survey/:id" element={<Aplicar />} />
+          <Route path="/mapas" element={<IndexMaps />} />
         </Route>
         <Route element={<ProtectedRoutesAdmin />}>
           <Route path="/usuarios" element={<IndexUsuarios />} />
